@@ -1,23 +1,24 @@
 ﻿int a;
 int b;
+int c;
+int max;
 
 Console.Write($"введите первое число: ");
 int.TryParse(Console.ReadLine()!, out a);
 Console.Write($"введите второе число: ");
 int.TryParse(Console.ReadLine()!, out b);
+Console.Write($"введите третье число: ");
+int.TryParse(Console.ReadLine()!, out c);
 
 
-Console.Write($"{a} + {b} = {a + b}\n");
-
-
-if (a > b)
-{ Console.WriteLine($"Число {a} больше чем {b}");
+if (b > a)
+{ Console.WriteLine($"{b} = max");
 }
-else if (a == b)
+else if (c > b)
 {
-Console.WriteLine($"Числа {a} и {b} равны");
+Console.WriteLine($"{c}  = max");
 }
-else
+else if (c > a)
 {
-Console.WriteLine($"Число {b} больше чем {a}");
+Console.WriteLine($"{a}  = max");
 }
